@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ShoppingCart</title>
 </head>
 <body>
     
     <div class="row">
         <div class="col-8">
-    <div class="container" id="shoppingBag">
-            <div class = "container heading">
+            <div class="container" id="shoppingBag">
+                <div class = "container heading">
                     <h1>YOUR SHOPPING BAG  </h1>
-            </div>
+                </div>
             <table id="cart" class="table table-hover table-condensed">
                         <thead>
                             <tr>
@@ -21,8 +21,7 @@
                                 <th style="width:45%"></th>
                                 <th style="width:10%">SIZE</th>
                                 <th style="width:15%">QTY</th>
-                                <th style="width:10%" class="text-center">PRICE</th>
-                                
+                                <th style="width:10%" class="text-center">PRICE</th>   
                             </tr>
                         </thead>
                         <tbody id="tableBody"> 
@@ -32,7 +31,7 @@
             <hr>
             <div class="total-section">
                 <div class="row">                                               
-                    <div class="col-5">                   
+                    <div class="col-5" id="helpSection">                   
                                   <p><strong>Need help or have questions?</strong></p>
                                   <p>Call Customer Service at 1-800-555-5555</p>
                                   <p><a href="#"><u>Chat with one of our stylists</u>></a></p>
@@ -101,91 +100,90 @@
 
 
   
-<!-- Modal: modalQuickView -->
- <div class="modal fade" id="modalQuickView" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
- <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="row">
-          
-          <div class="col-lg-6">
-              <div class="container" id="modal-left">
-                    <hr>
-                    <h4 class="h2-responsive product-name" id="modalTitle">
-                            <strong>Product title</strong>
-                    </h4>
-                    <h4 class="h4-responsive">
-                            <span class="green-text" id="modalPrice">
-                              <strong>$49</strong>
-                            </span>
-                    </h4>
-                    <div class="card-body">
+        <!-- Modal: EditItemModal -->
+        <div class="modal fade" id="modalQuickView" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
                         <div class="row">
-                            <div class="col-md-6" id="sizeList">
-                                <select class="md-form mdb-select colorful-select dropdown-primary" name="size" >
-                                    <option  value=""  >SIZE</option>
-                                    <option  value="XS">XS</option>
-                                    <option  value="S">S</option>
-                                    <option  value="L">L</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6" id="qtyList">
-                                <select class="md-form mdb-select colorful-select dropdown-primary" name="qty" >
-                                    <option  value=""  >QTY</option>
-                                    <option  value="1">1</option>
-                                    <option  value="2">2</option>
-                                    <option  value="3">3</option>
-                                </select>                                            
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="text-center" id="editItem">
+                            <div class="col-lg-6">
+                                <div class="container" id="modal-left">
+                                    <hr>
+                                    <h4 class="h2-responsive product-name" id="modalTitle">
+                                        <strong>Product title</strong>
+                                    </h4>
+                                    <h4 class="h4-responsive">
+                                        <span class="green-text" id="modalPrice">
+                                            <strong>$49</strong>
+                                        </span>
+                                    </h4>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6" id="sizeList">
+                                                <select class="md-form mdb-select colorful-select dropdown-primary" name="size" >
+                                                    <option  value=""  >SIZE</option>
+                                                    <option  value="XS">XS</option>
+                                                    <option  value="S">S</option>
+                                                    <option  value="M">M</option>
+                                                    <option  value="L">L</option>
+                                                    <option  value="XL">XL</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6" id="qtyList">
+                                                <select class="md-form mdb-select colorful-select dropdown-primary" name="qty" >
+                                                    <option  value=""  >QTY</option>
+                                                    <option  value="1">1</option>
+                                                    <option  value="2">2</option>
+                                                    <option  value="3">3</option>
+                                                    <option  value="4">4</option>
+                                                    <option  value="5">5</option>
+                                                </select>                                            
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="text-center" id="editItem">
                                   
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="button" class="btn btn-link btn-sm">See Product Details</button>
+                                            </div>
+                                        </div>                            
+                                    </div>                           
+                                </div>
                             </div>
-                            <div class="text-center">
-                                    <button type="button" class="btn btn-link btn-sm">See Product Details</button>
-                            </div>
-                        </div>                            
-                    </div>                           
-              </div>
-          </div>
-          <div class="col-lg-6">
-                <div id="modalImage">
+                            <div class="col-lg-6">
+                                <div id="modalImage">
                        
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
             </div>
         </div> 
-      </div>
-    </div>
-  </div>
-</div> 
 
-
-<div class="col-4 carouselContain">
-
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card h-100">
-                <img class="card-img-top" src="./src/images/image5.jpg" alt="First SLide">
-                <div class="card-body d-flex flex-column">
-                    <h4 class="card-title"><a>A-line dress</a></h4>
-                    <p class="card-text">Colour:Green</p>
-                    <button class="btn btn-primary mt-auto" data-toggle="modal" data-target="#modalQuickView2">VIEW DETAILS</button>
+<!-- TakeALookAtSection -->
+        <div class="col-4 carouselContain">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="./src/images/image5.jpg" alt="First SLide">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title"><a>A-line dress</a></h4>
+                            <p class="card-text">Colour:Green</p>
+                            <button class="btn btn-primary mt-auto" data-toggle="modal" data-target="#modalQuickView2">VIEW DETAILS</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-           </div>
-        
-      
-     
-          <div class="carousel-item">
-                <div class="card h-100">
+                <div class="carousel-item">
+                    <div class="card h-100">
                         <img class="card-img-top" src="./src/images/image3.jpg" alt="First SLide">
                         <div class="card-body d-flex flex-column">
                             <h4 class="card-title"><a>Product Name</a></h4>
@@ -193,9 +191,9 @@
                             <button class="btn btn-primary mt-auto" data-toggle="modal" data-target="#modalQuickView2">VIEW DETAILS</button>
                         </div>
                     </div>
-          </div>
-          <div class="carousel-item">
-                <div class="card h-100">
+                </div>
+                <div class="carousel-item">
+                    <div class="card h-100">
                         <img class="card-img-top" src="./src/images/image4.jpg" alt="First SLide">
                         <div class="card-body d-flex flex-column">
                             <h4 class="card-title"><a>Product Name</a></h4>
@@ -203,51 +201,62 @@
                             <button class="btn btn-primary mt-auto" data-toggle="modal" data-target="#modalQuickView2">VIEW DETAILS</button>
                         </div>
                     </div>
-          </div>
-        </div>
+                </div>
+            </div>
         
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
 </div>
 
-</div>
-</div>
-
-<!-- view details -->
+<!-- Modal:viewDetails -->
 <div class="modal fade" id="modalQuickView2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
   aria-hidden="true">
- <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="row">
-          
-          <div class="col-lg-6">
-              <div class="container" id="modal-left2">
-                    <hr>
-                    <h4 class="h2-responsive product-name" id="modalTitle2">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="container" id="modal-left2">
+                        <hr>
+                        <h4 class="h2-responsive product-name" id="modalTitle2">
                             <strong>Product Name</strong>
-                    </h4>
-                    <h4 class="h4-responsive">
+                        </h4>
+                        <h4 class="h4-responsive">
                             <span class="green-text">
                               <strong>$49</strong>
                             </span>
-                    </h4>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-6" >
-                                
-                                
+                        </h4>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6" >
+                                    <select class="md-form mdb-select colorful-select dropdown-primary" name="size" >
+                                            <option  value=""  >SIZE</option>
+                                            <option  value="XS">XS</option>
+                                            <option  value="S">S</option>
+                                            <option  value="M">M</option>
+                                            <option  value="L">L</option>
+                                            <option  value="XL">XL</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6" >
+                                        <select class="md-form mdb-select colorful-select dropdown-primary" name="qty" >
+                                                <option  value=""  >QTY</option>
+                                                <option  value="1">1</option>
+                                                <option  value="2">2</option>
+                                                <option  value="3">3</option>
+                                                <option  value="4">4</option>
+                                                <option  value="5">5</option>
+                                            </select>                                         
+                                </div>
                             </div>
-                            <div class="col-md-6" >
-                                                                         
-                            </div>
-                        </div>
                         
                             <div class="text-center" id="addItem">
                                     <button type="button" class="btn btn-primary">ADD TO CART</button>
@@ -260,20 +269,10 @@
               </div>
           </div>
           <div class="col-lg-6">
-               
-                <div id="carousel-thumb2" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
-                 
-                  <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                       <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/img%20(23).jpg"
                         alt="First slide">
                     </div>
-                    
-                  </div>
-                  
-                  
-                </div>
-                
               </div>
         </div>
       </div>

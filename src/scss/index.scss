@@ -83,8 +83,134 @@ a{
 .card-img-top {
     height: 300px;
 }
+hr {
+    border-top: 1px solid grey;
+}
+  
 
 
+@media screen and (max-width: 320px) {
+    h1{
+        width: 100%;
+        font-size: 1.7rem;
+    }
+    table#cart tbody td .form-control{
+		display: inline !important;
+	}
+	 table#cart thead { display: none; }
+	 table#cart tbody td { display: block; padding: .6rem; min-width:270px;}
+	table#cart tbody td:before {
+	     font-weight: bold;
+		display: inline-block; width: 8rem;
+	}
+	td {
+        text-align: -webkit-center;
+    }
+    .container.heading {
+        width: max-content;
+        padding: 0px;
+    }
+    .carouselContain{
+        display: none;
+    }
+   
+    div#codeSection {
+        display: contents;
+        width: max-content;
+    }
+    .col-7 {
+        // -ms-flex: 0 0 58.333333%;
+        flex: 0 0 160%;
+        max-width: 100%;
+    }
+    input.form-control {
+        width: 8rem;
+    }
+    div#shoppingBag {
+        width: fit-content;
+    }
+    div#shoppingBag {
+        width: fit-content;
+        padding: inherit;
+    }
+    #helpSection {
+        display: none;
+    }
+    p {
+        width: max-content;
+        
+    }
+    div#coupon , div#applyCoupon {
+        padding: 1rem;
+        padding-left: 5rem;
+    }
+    div#checkout {
+        display: contents;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    h1{
+        width: 100%;
+        font-size: 1.7rem;
+    }
+    table#cart tbody td .form-control{
+		display: inline !important;
+	}
+	 table#cart thead { display: none; }
+	 table#cart tbody td { display: block; padding: .6rem; min-width:270px;}
+	table#cart tbody td:before {
+	     font-weight: bold;
+		display: inline-block; width: 8rem;
+	}
+	td {
+        text-align: -webkit-center;
+    }
+    .container.heading {
+        width: max-content;
+        padding: 0px;
+    }
+    .carouselContain{
+        display: none;
+    }
+   
+    div#codeSection {
+        display: contents;
+        width: max-content;
+    }
+    .col-8 {
+        flex: 0 0 170%;
+        max-width: 100%;
+    }
+    .col-7 {
+        flex: 0 0 160%;
+        max-width: 100%;
+    }
+    input.form-control {
+        width: 8rem;
+    }
+    div#shoppingBag {
+        width: fit-content;
+    }
+    div#shoppingBag {
+        width: fit-content;
+        padding: inherit;
+    }
+    #helpSection {
+        display: none;
+    }
+    p {
+        width: max-content;
+        
+    }
+    div#coupon , div#applyCoupon {
+        padding: 1rem;
+        padding-left: 5rem;
+    }
+    div#checkout {
+        display: contents;
+    }
+}
 
 @media screen and (max-width: 450px) {
     h1{
@@ -112,9 +238,156 @@ a{
     }
    
     div#codeSection {
-        display: inline-block;
+        display: contents;
+        width: max-content;
+    }
+    .col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-7 {
+        flex: 0 0 160%;
+        max-width: 100%;
     }
     input.form-control {
         width: 8rem;
     }
+    div#shoppingBag {
+        width: fit-content;
+    }
+    div#shoppingBag {
+        width: fit-content;
+        padding: inherit;
+    }
+    #helpSection {
+        display: none;
+    }
+    p {
+        width: max-content;
+        
+    }
+    div#coupon , div#applyCoupon {
+        padding: 1rem;
+        padding-left: 5rem;
+    }
+    div#checkout {
+        display: contents;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body{
+   
+        background-color:white;
+      }
+      .table>tbody>tr>td, .table>tfoot>tr>td{
+        vertical-align: middle;
+    }
+    
+    div#applyCoupon {
+        padding: 0;
+        padding-left: 0.3rem;
+    }
+    div#coupon {
+        padding: 0;
+    }
+    
+    div#checkout {
+        float: right;
+    }
+    
+    div#modal-left, div#modal-left2 {
+        padding: 6rem;
+    }
+    h4.h4-responsive {
+        text-align: center;
+    }
+    div#editItem , div#addItem {
+        margin: auto;
+        padding: 1rem;
+        padding-bottom: 0rem;
+    }
+    button.btn.btn-primary {
+        width: 8.4rem;
+    }
+    button.btn.btn-link.btn-sm {
+        padding-left: 1.4rem;
+    }
+    div#carousel-thumb {
+        padding: 1.5rem;
+    }
+    
+    
+    div#carouselExampleIndicators {
+        padding: 3rem;
+        margin-top: 105px;
+    }
+    div#shoppingBag {
+        padding: 3rem;
+    }
+    .container.heading {
+        padding-bottom: 3rem;
+        padding-left: 0px;
+    }
+    div#cc {
+        padding-right: 0;
+    }
+    span.totals-item  {
+        font-weight: bold;
+    }
+    p.itemDetail {
+        font-size: small;
+    }
+    
+    button.btn.btn-link {
+        padding: 0;
+    }
+    
+    .btn-primary {
+        color: #fff;
+        background-color: black;
+    }
+    
+    .btn-link {
+        font-weight: 400;
+        color:black;
+        background-color: transparent;
+    }
+        
+    a{
+        color : black;
+    }
+    
+    .card-img-top {
+        height: 300px;
+    }
+    hr {
+        border-top: 1px solid grey;
+    }
+     h1 {
+        font-size: 2.4rem;
+    }
+    input.form-control.text-center {
+        padding: 0px;
+    }
+    div#codeSection {
+        display: contents;
+    }
+    input.form-control {
+        width: fit-content;
+    }
+    button.btn.btn-primary.waves-effect {
+        width: 11.6rem;
+        margin-top: 0.5rem;
+    }
+    button.btn.btn-primary.mt-auto {
+        width: auto;
+    }
+    .col-4.carouselContain {
+        display: none;
+    }
+    .total-section {
+        width: max-content;
+    }
+    
 }
