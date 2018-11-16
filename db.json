@@ -1,0 +1,24 @@
+{
+  "cartitems": [
+    {
+      "id": 1,
+      "title": "White Bodycon",
+      "style": "MS13KT1906",
+      "colour": "White",
+      "img": "./src/images/dress1.jpg",
+      "size": "S",
+      "qty": "1",
+      "price": 11
+    },
+    {
+      "id": 2,
+      "title": "Black Dress",
+      "style": "MS13KT1906",
+      "colour": "Black",
+      "img": "./src/images/image2.jpg",
+      "size": "L",
+      "qty": "2",
+      "price": 17
+    }
+  ]
+}

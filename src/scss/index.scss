@@ -1,0 +1,119 @@
+body{
+   
+    background-color:white;
+  }
+  .table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control{
+		width:20%;
+		display: inline !important;
+	}
+	.actions .btn{
+		width:36%;
+		margin:1.5em 0;
+	}
+	
+	.actions .btn-info{
+		float:left;
+	}
+	.actions .btn-danger{
+		float:right;
+	}
+	
+	table#cart thead { display: none; }
+	table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
+	table#cart tbody tr td:first-child { background: #333; color: #fff; }
+	table#cart tbody td:before {
+		content: attr(data-th); font-weight: bold;
+		display: inline-block; width: 8rem;
+	}
+	
+	
+	
+	table#cart tfoot td{display:block; }
+	table#cart tfoot td .btn{display:block;}
+	
+}
+
+
+
+
+div#applyCoupon {
+    padding: 0;
+    padding-left: 0.3rem;
+}
+div#coupon {
+    padding: 0;
+}
+
+div#checkout {
+    float: right;
+}
+
+div#modal-left, div#modal-left2 {
+    padding: 6rem;
+}
+h4.h4-responsive {
+    text-align: center;
+}
+div#editItem , div#addItem {
+    margin: auto;
+    padding: 1rem;
+    padding-bottom: 0rem;
+}
+button.btn.btn-primary {
+    width: 8.4rem;
+}
+button.btn.btn-link.btn-sm {
+    padding-left: 1.4rem;
+}
+div#carousel-thumb {
+    padding: 1.5rem;
+}
+
+#carouselContain{
+    position: relative;
+}
+    
+div#carouselExampleIndicators {
+    padding: 3rem;
+    margin-top: 105px;
+}
+div#shoppingBag {
+    padding: 3rem;
+}
+.container.heading {
+    padding-bottom: 3rem;
+    padding-left: 0px;
+}
+div#cc {
+    padding-right: 0;
+}
+span.totals-item  {
+    font-weight: bold;
+}
+p.itemDetail {
+    font-size: small;
+}
+
+button.btn.btn-link {
+    padding: 0;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+}
+
+.btn-link {
+    font-weight: 400;
+    color:black;
+    background-color: transparent;
+}
+    
+a{
+    color : black;
+}
