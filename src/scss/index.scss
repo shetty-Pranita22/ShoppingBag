@@ -5,40 +5,6 @@ body{
   .table>tbody>tr>td, .table>tfoot>tr>td{
     vertical-align: middle;
 }
-@media screen and (max-width: 600px) {
-    table#cart tbody td .form-control{
-		width:20%;
-		display: inline !important;
-	}
-	.actions .btn{
-		width:36%;
-		margin:1.5em 0;
-	}
-	
-	.actions .btn-info{
-		float:left;
-	}
-	.actions .btn-danger{
-		float:right;
-	}
-	
-	table#cart thead { display: none; }
-	table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
-	table#cart tbody tr td:first-child { background: #333; color: #fff; }
-	table#cart tbody td:before {
-		content: attr(data-th); font-weight: bold;
-		display: inline-block; width: 8rem;
-	}
-	
-	
-	
-	table#cart tfoot td{display:block; }
-	table#cart tfoot td .btn{display:block;}
-	
-}
-
-
-
 
 div#applyCoupon {
     padding: 0;
@@ -73,10 +39,7 @@ div#carousel-thumb {
     padding: 1.5rem;
 }
 
-#carouselContain{
-    position: relative;
-}
-    
+
 div#carouselExampleIndicators {
     padding: 3rem;
     margin-top: 105px;
@@ -105,7 +68,6 @@ button.btn.btn-link {
 .btn-primary {
     color: #fff;
     background-color: black;
-    border-color: black;
 }
 
 .btn-link {
@@ -116,4 +78,43 @@ button.btn.btn-link {
     
 a{
     color : black;
+}
+
+.card-img-top {
+    height: 300px;
+}
+
+
+
+@media screen and (max-width: 450px) {
+    h1{
+        width: 100%;
+        font-size: 1.7rem;
+    }
+    table#cart tbody td .form-control{
+		display: inline !important;
+	}
+	 table#cart thead { display: none; }
+	 table#cart tbody td { display: block; padding: .6rem; min-width:270px;}
+	table#cart tbody td:before {
+	     font-weight: bold;
+		display: inline-block; width: 8rem;
+	}
+	td {
+        text-align: -webkit-center;
+    }
+    .container.heading {
+        width: max-content;
+        padding: 0px;
+    }
+    .carouselContain{
+        display: none;
+    }
+   
+    div#codeSection {
+        display: inline-block;
+    }
+    input.form-control {
+        width: 8rem;
+    }
 }

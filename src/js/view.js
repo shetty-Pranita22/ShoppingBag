@@ -28,11 +28,11 @@ export let display = (cartItem) => {
                         </div>
                     </div>
                 </td>
-                <td data-th="Size">${cartItem.size}</td>
-                <td data-th="Qty">
+                <td data-tl="Size">${cartItem.size}</td>
+                <td data-tl="Qty">
                     <input type="number" class="form-control text-center" value="${cartItem.qty}">
                 </td>
-                <td data-th="Price" class="text-center">$${p}</td>
+                <td data-tl="Price" class="text-center">$${p}</td>
             </tr>`;
 
 let tr = createHTMLElement(html);
